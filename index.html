@@ -70,12 +70,22 @@
   <!-- Text Section -->
   <div class="w-full text-center sm:text-left sm:w-1/2 px-4">
     <h1 class="banner-header">ALWAYS <span class="text-orange-600">FRESH <br>FLOWERS</span></h1>
-    <p class="banner-paragraph opacity text-gray-600 text-sm">
-      Indulge your senses with the beauty and fragrance of <br>
-      our fresh flower shop. From classic roses to exotic <br>
-      blooms, we offer a wide variety of fresh flowers that <br>
-      are perfect for any occasion.
-    </p>
+    <!-- ✅ Mobile-only paragraph (justified) -->
+<p class="banner-paragraph opacity text-gray-600 text-sm text-justify sm:hidden">
+  Indulge your senses with the beauty and fragrance of
+  our fresh flower shop. From classic roses to exotic
+  blooms, we offer a wide variety of fresh flowers that
+  are perfect for any occasion.
+</p>
+
+<!-- ✅ Desktop-only paragraph (original) -->
+<p class="banner-paragraph opacity text-gray-600 text-sm hidden sm:block">
+  Indulge your senses with the beauty and fragrance of <br>
+  our fresh flower shop. From classic roses to exotic <br>
+  blooms, we offer a wide variety of fresh flowers that <br>
+  are perfect for any occasion.
+</p>
+
   </div>
 
   <!-- Image Section -->
@@ -258,7 +268,8 @@
 
         <!-- footer -->
 
-        <section class="footer">
+        <section class="footer hidden sm:block">
+
             <div class="footer-container">
             <div class="footer-container-a">
                 
@@ -280,9 +291,49 @@
                     <img src="images/icon-facebook.png" alt="facebook">
                     <img src="images/icon-youtube.png" alt="youtube">
                 </div>
-        </div>  
+        </div> 
             
         </section>
+        
+        <!-- ✅ Mobile Footer (sm and below only) -->
+<section class="sm:hidden footer px-4 py-10 flex flex-col gap-4">
+
+  <!-- 1. Logo -->
+  <div>
+    <img src="images/logo.png" alt="logo" class="h-30 w-auto">
+  </div>
+
+  <!-- 2. Paragraph -->
+  <div>
+    <p class="banner-paragraph opacity text-base text-lg">
+      Indulge your senses with the beauty and fragrance of our fresh flower shop.
+    </p>
+  </div>
+
+  <!-- 3–12: All links one under another -->
+  <div class="flex flex-col text-gray-600 text-base gap-2">
+    <p class="text-gray-500">Home</p>
+    <p class="text-gray-500">About Us</p>
+    <p class="text-gray-500">Blog</p>
+    <p class="text-gray-500">FAQ</p>
+    <p class="text-gray-500">Contact Us</p>
+    <p class="text-gray-500">Features</p>
+    <p class="text-gray-500">Pricing</p>
+    <p class="text-gray-500">Privacy Policy</p>
+    <p class="text-gray-500">Terms of Service</p>
+    <p class="text-gray-500">Help Center</p>
+  </div>
+
+  <!-- 13. Social icons row with spacing -->
+  <div class="flex gap-4 mt-2">
+    <img src="images/icon-linkedin.png" alt="LinkedIn" class="h-6 w-6">
+    <img src="images/icon-twitter.png" alt="Twitter" class="h-6 w-6">
+    <img src="images/icon-facebook.png" alt="Facebook" class="h-6 w-6">
+    <img src="images/icon-youtube.png" alt="YouTube" class="h-6 w-6">
+  </div>
+
+</section>
+
 
         <!-- footer part ended-->
 
